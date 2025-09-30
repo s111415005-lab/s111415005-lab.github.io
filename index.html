@@ -2,192 +2,29 @@
 <html lang="zh-Hant">
 <head>
     <meta charset="UTF-8">
+    <title>基本頁面</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>首頁</title>
-    <style>
-        body {
-            font-family: 'Comic Sans MS', cursive, sans-serif;
-            background: repeating-linear-gradient(45deg, #ff00cc, #3333ff 20px, #00ffcc 40px, #ffcc00 60px, #00ff99 80px, #ff6600 100px, #6600ff 120px);
-            margin: 0;
-            animation: bgmove 10s linear infinite;
-        }
-        @keyframes bgmove {
-            0% { background-position: 0 0; }
-            100% { background-position: 800px 800px; }
-        }
-        .container {
-            max-width: 900px;
-            margin: 60px auto;
-            background: linear-gradient(135deg, rgba(255,255,255,0.9) 60%, rgba(255,204,0,0.7) 100%);
-            padding: 48px;
-            border-radius: 24px;
-            box-shadow: 0 0 40px 10px #ff00cc, 0 0 80px 20px #00ffcc inset, 0 0 60px 20px #ffcc00;
-            text-align: center;
-        }
-        h1 {
-            color: #ff00cc;
-            font-size: 3.5em;
-            text-shadow: 2px 2px 8px #3333ff, 0 0 20px #00ffcc, 0 0 30px #ffcc00, 0 0 40px #00ff99;
-            animation: shake 0.5s infinite alternate;
-            background: linear-gradient(90deg, #ff00cc, #00ffcc, #ffcc00, #00ff99, #ff6600, #6600ff);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            color: transparent;
-        }
-        .crazy {
-            font-size: 2em;
-            background: linear-gradient(90deg, #ff00cc, #00ffcc, #ffcc00, #00ff99, #ff6600, #6600ff);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            color: transparent;
-            animation: rainbow 1.2s linear infinite;
-        }
-        .gif {
-            width: 200px;
-            border-radius: 50%;
-            box-shadow: 0 0 30px 10px #ff00cc;
-            margin: 24px auto;
-            display: block;
-        }
-        .marquee {
-            font-size: 1.5em;
-            color: #fff;
-            background: #3333ff;
-            padding: 8px 0;
-            margin-bottom: 24px;
-            animation: marquee 10s linear infinite;
-            white-space: nowrap;
-            overflow: hidden;
-        }
-        @keyframes marquee {
-            0% { transform: translateX(100%); }
-            100% { transform: translateX(-100%); }
-        }
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
-        }
-        @keyframes bounce {
-            0% { transform: translateY(0); }
-            100% { transform: translateY(-30px); }
-        }
-        @keyframes shakeimg {
-            0% { transform: rotate(-10deg); }
-            100% { transform: rotate(10deg); }
-        }
-        .crazy-effects img {
-            box-shadow: 0 0 20px 5px #ff00cc, 0 0 40px 10px #00ffcc, 0 0 30px 10px #ffcc00, 0 0 20px 10px #00ff99;
-            border-radius: 50%;
-        }
-        .rainbow-text {
-            font-size: 2.5em;
-            font-weight: bold;
-            text-align: center;
-            margin: 20px 0;
-            background: linear-gradient(90deg, #ff00cc, #00ffcc, #3333ff, #ffcc00, #00ff99, #ff6600, #6600ff);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            color: transparent;
-            animation: rainbow 1s linear infinite;
-        }
-        .crazy-btn {
-            font-size: 1.2em;
-            margin: 8px;
-            padding: 12px 24px;
-            border: none;
-            border-radius: 12px;
-            background: linear-gradient(45deg, #ff00cc, #00ffcc, #ffcc00, #00ff99, #ff6600, #6600ff);
-            color: #fff;
-            box-shadow: 0 0 10px #3333ff, 0 0 20px #ffcc00;
-            cursor: pointer;
-            animation: shakebtn 0.3s infinite alternate;
-        }
-        .crazy-marquee marquee {
-            background: linear-gradient(90deg, #ff00cc, #00ffcc, #ffcc00, #00ff99, #ff6600, #6600ff);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            color: transparent;
-            font-weight: bold;
-        }
-        .crazy-marquee {
-            margin: 24px 0;
-        }
-        @keyframes horror {
-            0% { filter: brightness(1) grayscale(0); }
-            100% { filter: brightness(0.5) grayscale(1); }
-        }
-        body.horror-mode {
-            filter: grayscale(1) brightness(0.5) contrast(2);
-        }
-        .jumpscare {
-            display: none;
-        }
-        body.horror-mode .jumpscare {
-            display: flex !important;
-        }
-    </style>
 </head>
 <body>
-    <div class="marquee">⚡️ 警告！請勿長時間注視本頁面！⚡️</div>
-    <div class="container">
-        <h1>首頁</h1>
-        <img class="gif" src="https://media.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif" alt="crazy gif">
-        <p class="crazy">這是您的範例頁面。色彩、動畫、閃爍，讓人目不暇給！</p>
-        <p>你準備好接受衝擊了嗎？</p>
-        <div class="crazy-effects">
-            <img src="https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif" style="width:120px; margin:10px; animation: spin 2s linear infinite;">
-            <img src="https://media.giphy.com/media/26ufdipQqU2lhNA4g/giphy.gif" style="width:120px; margin:10px; animation: bounce 1s infinite alternate;">
-            <img src="https://media.giphy.com/media/3o6ZtpxSZbQRRnwCKQ/giphy.gif" style="width:120px; margin:10px; animation: shakeimg 0.5s infinite alternate;">
-            <img src="https://media.giphy.com/media/3o7aD2saalBwwftBIY/giphy.gif" style="width:120px; margin:10px; animation: horror 1.2s infinite alternate;">
-            <audio src="https://cdn.pixabay.com/audio/2022/10/16/audio_12b6b9b7b7.mp3" autoplay loop></audio>
-        </div>
-        <div class="rainbow-text">🌈🌈🌈🌈🌈🌈🌈🌈</div>
-        <div class="crazy-buttons">
-            <button onclick="alert('你被精神污染了！')" class="crazy-btn">點我！</button>
-            <button onclick="document.body.style.filter='invert(1) hue-rotate(180deg)';" class="crazy-btn">反轉色彩</button>
-            <button onclick="document.body.style.filter='none';" class="crazy-btn">恢復正常</button>
-            <button onclick="document.body.classList.toggle('horror-mode');" class="crazy-btn">恐怖模式</button>
-        </div>
-        <div class="crazy-marquee">
-            <marquee behavior="alternate" scrollamount="30" style="color:#ff00cc; font-size:2em;">精神污染精神污染精神污染精神污染精神污染</marquee>
-        </div>
-        <div class="jumpscare" style="display:none; position:fixed; top:0; left:0; width:100vw; height:100vh; background:rgba(0,0,0,0.95); z-index:9999; justify-content:center; align-items:center; flex-direction:column;">
-            <img src="https://i.imgur.com/2v0A1bA.png" style="width:40vw; animation: shakeimg 0.2s infinite alternate; margin-bottom:24px;">
-            <img src="https://i.imgur.com/8Q1QXQv.jpg" style="width:20vw; margin:12px; box-shadow:0 0 40px #ff00cc; border-radius:16px;">
-            <img src="https://i.imgur.com/1Q9Z1ZB.jpg" style="width:20vw; margin:12px; box-shadow:0 0 40px #3333ff; border-radius:16px;">
-            <img src="https://i.imgur.com/3Q1QXQv.jpg" style="width:20vw; margin:12px; box-shadow:0 0 40px #ffcc00; border-radius:16px;">
-            <audio src="https://cdn.pixabay.com/audio/2022/10/16/audio_12b6b9b7b7.mp3" autoplay></audio>
-        </div>
-    </div>
-    <script>
-        // 閃爍背景
-        setInterval(() => {
-            document.body.style.background =
-                Math.random() > 0.5 ?
-                'repeating-linear-gradient(45deg, #ff00cc, #3333ff 20px, #00ffcc 40px)' :
-                'repeating-linear-gradient(135deg, #00ffcc, #ff00cc 20px, #3333ff 40px)';
-        }, 800);
-        // 彩虹文字閃爍
-        setInterval(() => {
-            document.querySelector('.rainbow-text').style.filter = `hue-rotate(${Math.random()*360}deg)`;
-        }, 200);
-        // 恐怖模式
-        document.querySelector('.crazy-btn:nth-child(4)').onclick = function() {
-            document.body.classList.toggle('horror-mode');
-            if(document.body.classList.contains('horror-mode')) {
-                setTimeout(() => {
-                    document.querySelector('.jumpscare').style.display = 'flex';
-                    setTimeout(() => {
-                        document.querySelector('.jumpscare').style.display = 'none';
-                        document.body.classList.remove('horror-mode');
-                    }, 1800);
-                }, 1200);
-            }
-        };
-    </script>
+    <h1>唐詩三百首</h1>
+
+     <table border="1">
+        <tr>
+            <td> <h2>桃花溪</h2>
+    <p>隐隐飞桥隔野烟，石矶西畔问渔船。</p>
+    <p>桃花尽日随流水，洞在清溪何处边。</p>
+            <td><img src="images.jpg" alt="Italian Trulli"></td>
+        </tr>
+        <table border="1">
+        <tr>
+            <td> <h2>闺怨</h2>
+    <p>闺中少妇不知愁，春日凝妆上翠楼。</p>
+    <p>忽见陌头杨柳色，悔教夫婿觅封侯。</p>
+            <td><img src="pic1.jpeg" alt="Italian Trulli"></td>
+        </tr>
+    </table>
+    <p>這是一個基本的HTML頁面。</p>
+
+   
 </body>
 </html>
