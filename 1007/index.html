@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>表格 × 圖片練習</title>
+  <style>
+    body { font-family: 'Segoe UI', Arial, sans-serif; margin: 2em; background: #f8f8f8; }
+    h1 { text-align: center; }
+    .table-scroll {
+      overflow-x: auto;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px #0001;
+      padding: 1em;
+      margin: 0 auto;
+      max-width: 900px;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      min-width: 600px;
+      background: #fff;
+    }
+    th, td {
+      border: 1px solid #bbb;
+      padding: 0.7em 1em;
+      text-align: center;
+      vertical-align: top;
+    }
+    th { background: #e0e7ef; }
+    td img {
+      width: 100%;
+      max-width: 480px;
+      height: auto;
+      display: block;
+      margin: 0 auto 0.5em;
+      border-radius: 6px;
+      box-shadow: 0 1px 4px #0002;
+    }
+    .caption { font-weight: bold; margin-top: 0.3em; }
+    @media (max-width: 700px) {
+      body { margin: 0.5em; }
+      .table-scroll { padding: 0.3em; }
+      table { min-width: 400px; }
+    }
+  </style>
+</head>
+<body>
+  <h1>表格 × 圖片練習</h1>
+  <div class="table-scroll">
+    <table>
+      <tr>
+        <th>分類</th>
+        <th>照片</th>
+        <th>標題/描述</th>
+        <th>日期</th>
+      </tr>
+      <tr>
+        <td rowspan="2">城市風景</td>
+        <td>
+          <img src="pic1.avif" alt="傍晚的河岸與城市天際線倒影">
+          <div class="caption">河畔夕照</div>
+        </td>
+        <td>金色陽光灑在河面，倒映城市天際線。</td>
+        <td>2025-09-01</td>
+      </tr>
+      <tr>
+        <td>
+          <img src="pic2.avif" alt="夜晚燈光點綴的街道與咖啡店">
+          <div class="caption">夜色小徑</div>
+        </td>
+        <td>街角咖啡店透出溫暖光暈。</td>
+        <td>2025-09-02</td>
+      </tr>
+      <tr>
+        <td colspan="4" style="background:#f3f7fa;font-weight:bold;">海邊旅行</td>
+      </tr>
+      <tr>
+        <td>自然風景</td>
+        <td>
+          <img src="pic.3.avif" alt="沙灘、海浪與遠方的帆船">
+          <div class="caption">清晨海浪</div>
+        </td>
+        <td>第一道陽光照亮浪花與沙粒。</td>
+        <td>2025-09-03</td>
+      </tr>
+    </table>
+  </div>
+  <p style="max-width:900px;margin:2em auto 0;color:#666;font-size:0.95em;">小提示：圖片請使用相對路徑 <code>images/檔名.png</code>；若要更換圖片，把新檔案放進 <code>images</code> 資料夾並更新 <code>src</code> 與 <code>alt</code>。</p>
+</body>
+</html>
